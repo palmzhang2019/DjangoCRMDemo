@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block con %}
+<h3>添加页面</h3>
+
+{% include 'form.html' %}
+<script>
+    function pop_response(pk, text, id_name){
+        var $option = $("<option>");
+        $option.html(text);
+        $option.val(pk);
+        $option.attr("selected", "selected");
+        $("#" + id_name + "").append($option);
+    }
+
+</script>
+{% endblock %}

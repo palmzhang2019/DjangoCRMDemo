@@ -1,0 +1,5 @@
+        <div class="menu">
+            {% for foo in menuPermissionList %}
+                <p class="menu_btn"><a href="{{ foo.0 }}">{{ foo.1 }}</a></p>
+            {% endfor %}
+        </div>
